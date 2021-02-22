@@ -1,16 +1,16 @@
 .logo {
   @extend %link;
-  font-family: $logo-font;
+  font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 
-  color: $black-text-color;
+  color: var(--black-text-color);
 
   margin-right: 93px;
   padding: 25px 0px;
 
   & .accent {
-    color: $accent-text-color;
+    color: var(--accent-text-color);
   }
 }

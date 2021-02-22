@@ -22,7 +22,7 @@
   border-radius: 4px;
   background-color: transparent;
 
-  color: $white-text-color;
+  color: var(--white-text-color);
 
   &::placeholder {
     font-size: 16px;

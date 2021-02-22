@@ -1,5 +1,5 @@
 .team {
-  background-color: $bgc-team-color;
+  background-color: var(--bgc-team-color);
 }
 .team-list {
   @extend %list;
@@ -22,7 +22,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  color: $title-text-color;
+  color: var(--title-text-color);
 
   text-align: center;
 }

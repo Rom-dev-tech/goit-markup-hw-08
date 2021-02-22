@@ -1,6 +1,6 @@
 // description-text" from bady
 .description-subtitle {
-  color: $title-text-color;
+  color: var(--title-text-color);
   font-size: 14px;
   line-height: 1.14;
 
@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: $bgc-team-color;
+  background-color: var(--bgc-team-color);
 
   border-radius: 4px;
   margin-bottom: 30px;

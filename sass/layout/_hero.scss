@@ -1,7 +1,7 @@
 .hero {
   padding: 200px 0;
   text-align: center;
-  background-color: $bgc-hero-color;
+  background-color: var(--bgc-hero-color);
 
   max-width: 1600px;
   height: 600px;
@@ -28,7 +28,7 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: $white-text-color;
+  color: var(--white-text-color);
   letter-spacing: 0.06em;
 
   letter-spacing: 0.06em;
