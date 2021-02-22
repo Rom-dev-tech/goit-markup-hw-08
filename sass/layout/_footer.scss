@@ -1,0 +1,50 @@
+.footer {
+  background-color: $bgc-hero-color;
+
+  padding: 60px 0;
+
+  & .logo {
+    padding: 0;
+    margin-bottom: 20px;
+    color: $white-text-color;
+  }
+}
+.footer-list {
+  @extend %list;
+}
+.footer-link {
+  @extend %link;
+  color: $footer-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-address {
+  margin-bottom: 9px;
+  font-style: normal;
+  color: $white-text-color;
+}
+.footer-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.join-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $white-text-color;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+.footer-social-icon {
+  fill: $white-text-color;
+}
+.first-column {
+  margin-right: 70px;
+}

@@ -1,0 +1,37 @@
+body {
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-text-color;
+
+  font-family: $main-font;
+  background-color: $white-text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  display: block;
+}
+
+.section-padding {
+  padding: 94px 0;
+}

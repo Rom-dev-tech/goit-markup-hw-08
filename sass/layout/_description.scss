@@ -1,0 +1,34 @@
+// description-text" from bady
+.description-subtitle {
+  color: $title-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+}
+.description-list {
+  @extend %list;
+  display: flex;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $bgc-team-color;
+
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 120px;
+}
+.description-item {
+  max-width: 270px;
+  height: 251px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
