@@ -1,3 +1,7 @@
+.regular-clients {
+  display: none;
+}
+
 .regular-clients-list {
   @extend %list;
   display: flex;
