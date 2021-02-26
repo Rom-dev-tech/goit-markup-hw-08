@@ -400,20 +400,36 @@ a {
   text-align: center;
 }
 
-.description-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .description-list {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
-  .description-item {
-    width: 50%;
+}
+
+@media screen and (min-width: 1200px) {
+  .description-list {
+    flex-wrap: nowrap;
   }
+}
+
+@media screen and (max-width: 767px) {
   .description-item:not(:last-child) {
-    margin-bottom: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .description-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description-item {
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 
