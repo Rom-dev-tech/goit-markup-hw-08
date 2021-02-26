@@ -7,11 +7,20 @@
   color: var(--white-text-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.37;
+  }
 }
 .main-text {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 }
 .hero {
   padding: 118px 0;
@@ -34,6 +43,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
   screen and (min-resolution: 192dpi) and (min-width: 320px),
@@ -95,20 +108,5 @@
         rgba(47, 48, 58, 0.4)
       ),
       url('/images/hero/hero-desktop@2x.jpg');
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding: 200px 0;
-  }
-
-  .hero-title {
-    font-size: 44px;
-    line-height: 1.37;
-  }
-
-  .main-text {
-    max-width: 696px;
   }
 }
