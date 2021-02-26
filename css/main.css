@@ -469,8 +469,13 @@ a {
 }
 
 .about {
-  display: none;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
 }
 
 .about-list {
