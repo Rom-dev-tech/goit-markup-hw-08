@@ -1,8 +1,15 @@
-.description {
-  display: none;
+.description-list {
+  @extend %list;
 }
-
-// description-text" from bady
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgc-team-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+}
 .description-subtitle {
   color: var(--title-text-color);
   font-size: 14px;
@@ -11,28 +18,39 @@
   margin-bottom: 10px;
 
   text-transform: uppercase;
-}
-.description-list {
-  @extend %list;
-  display: flex;
-}
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: var(--bgc-team-color);
-
-  border-radius: 4px;
-  margin-bottom: 30px;
-  width: 100%;
-  height: 120px;
+  text-align: center;
 }
 .description-item {
-  max-width: 270px;
-  height: 251px;
-
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .description-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description-item {
+    width: 50%;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// .icon-container {
+//   width: 100%;
+//   height: 120px;
+// }
+
+// .description-item {
+//   max-width: 270px;
+//   height: 251px;
+
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
