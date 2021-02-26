@@ -69,7 +69,13 @@ a {
 }
 
 .section-padding {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-padding {
+    padding: 94px 0;
+  }
 }
 
 .container {
@@ -180,9 +186,7 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .site-contacts {
-    display: none;
-  }
+  .site-contacts,
   .site-nav {
     display: none;
   }
