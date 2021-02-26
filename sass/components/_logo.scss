@@ -9,23 +9,26 @@
 
   padding: 16px 0px;
 
-  & .accent {
-    color: var(--accent-text-color);
-  }
-}
-
-@media screen and(min-width: 768px) {
-  .logo {
+  @media screen and(min-width: 768px) {
     margin-right: 88px;
     padding: 26px 0px;
   }
-}
 
-@media screen and(min-width: 1200px) {
-  .logo {
+  @media screen and(min-width: 1200px) {
     margin-right: 93px;
     padding: 25px 0px;
     font-size: 26px;
     line-height: 1.19;
+  }
+
+  & .accent {
+    color: var(--accent-text-color);
+  }
+
+  .footer & {
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    color: var(--white-text-color);
   }
 }

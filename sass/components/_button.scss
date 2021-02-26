@@ -15,4 +15,10 @@
   border: none;
 
   cursor: pointer;
+
+  .footer-form & {
+    position: relative;
+    padding: 10px 28px;
+    text-align: start;
+  }
 }
