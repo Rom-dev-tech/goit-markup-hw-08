@@ -24,8 +24,7 @@
   overflow: hidden;
 }
 
-.social-list, .site-contacts,
-.site-nav, .description-list, .about-list, .team-list, .regular-clients-list, .footer-list {
+.social-list, .site-contacts, .site-nav, .description-list, .about-list, .team-list, .regular-clients-list, .footer-list {
   list-style: none;
 }
 
@@ -190,26 +189,38 @@ a {
   }
 }
 
-.nav-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .site-contacts {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .site-contacts,
+@media screen and (min-width: 768px) {
+  .site-contacts {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-contacts {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .site-nav {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .header-flex-container,
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
   .site-nav {
     display: flex;
   }
+}
+
+@media screen and (min-width: 768px) {
   .nav-link {
     position: relative;
     display: inline-flex;
@@ -248,9 +259,19 @@ a {
   .nav-link.current {
     color: var(--accent-text-color);
   }
-  .site-contacts {
-    display: block;
-    margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header-flex-container,
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
@@ -261,43 +282,51 @@ a {
   .nav-contacts:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-contacts:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav-link.contact {
     padding: 0;
     font-size: 12px;
     line-height: 1.16;
   }
-  .icon-mail {
-    width: 14px;
-    height: 10px;
-    margin-right: 8px;
-    fill: currentColor;
-  }
-  .icon-phone {
-    width: 10px;
-    height: 14px;
-    margin-right: 8px;
-    fill: currentColor;
-  }
+}
+
+.icon-mail {
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  fill: currentColor;
 }
 
 @media screen and (min-width: 1200px) {
-  .site-contacts {
-    display: flex;
-  }
   .icon-mail {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
   }
+}
+
+.icon-phone {
+  width: 10px;
+  height: 14px;
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
   .icon-phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
-  }
-  .nav-contacts:not(:last-child) {
-    margin-right: 50px;
   }
 }
 

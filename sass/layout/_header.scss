@@ -1,35 +1,36 @@
-.site-contacts,
-.site-nav {
+.site-contacts {
   @extend %list;
-}
-.nav-link {
-  @extend %link;
-}
-.nav-item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  .site-contacts,
-  .site-nav {
+  @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .header-flex-container,
-  .header-nav {
-    display: flex;
-    align-items: center;
+.site-nav {
+  @extend %list;
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 
-  .site-nav {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
+}
 
-  .nav-link {
+.nav-link {
+  @extend %link;
+
+  @media screen and (min-width: 768px) {
     position: relative;
 
     display: inline-flex;
@@ -81,59 +82,71 @@
       color: var(--accent-text-color);
     }
   }
-  .site-contacts {
-    display: block;
-    margin-left: auto;
+}
+
+.header-flex-container,
+.header-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav-contacts {
+.nav-item {
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.nav-contacts {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
   }
 
-  .nav-link.contact {
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
+.nav-link.contact {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 0;
     font-size: 12px;
     line-height: 1.16;
   }
-
-  .icon-mail {
-    width: 14px;
-    height: 10px;
-    margin-right: 8px;
-    fill: currentColor;
-  }
-  .icon-phone {
-    width: 10px;
-    height: 14px;
-    margin-right: 8px;
-    fill: currentColor;
-  }
 }
 
-@media screen and (min-width: 1200px) {
-  .site-contacts {
-    display: flex;
-  }
+.icon-mail {
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  fill: currentColor;
 
-  .icon-mail {
+  @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
   }
-  .icon-phone {
+}
+.icon-phone {
+  width: 10px;
+  height: 14px;
+  margin-right: 8px;
+  fill: currentColor;
+
+  @media screen and (min-width: 1200px) {
     width: 10px;
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
-  }
-
-  .nav-contacts:not(:last-child) {
-    margin-right: 50px;
   }
 }
