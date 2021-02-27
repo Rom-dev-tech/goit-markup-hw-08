@@ -15,6 +15,12 @@
     width: 1200px;
   }
 
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .footer & {
     display: flex;
 
