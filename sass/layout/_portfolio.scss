@@ -4,28 +4,42 @@
 .portfolio-list {
   @extend %list;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 25px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 34px;
+  }
 }
+
 .portfolio-title {
   font-size: 18px;
-  font-weight: 700;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 
   margin-bottom: 4px;
 }
+
 .portfolio-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.87;
 }
-.card-description {
-  padding: 20px 20px;
-}
 .portfolio-item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }
