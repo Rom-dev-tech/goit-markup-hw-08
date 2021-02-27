@@ -11,43 +11,97 @@
 </head>
 <body>
 <!--header-->
-<header class="header border-portfolio">
+<header class="header">
    <div class="container">
-      <div class="header-flex-container">
          <nav class="header-nav">
             <a class="logo" href="./index.html"><span class="accent">Web</span>Studio</a>
             <ul class="site-nav">
                <li class="nav-item">
-                  <a class="nav-link scale" href="./index.html">Студия</a>
+                  <a class="nav-link current" href="#">Студия</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link current" href="#">Портфолио</a>
+                  <a class="nav-link scale" href="./portfolio.html">Портфолио</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link scale" href="#">Контакты</a>
                </li>
             </ul>
          </nav>
+         <button class="burger-btn" data-menu-button type="button">
+            <svg class="burger-icon">
+               <use href="./images/sprite.svg#mobile-menu"></use>
+            </svg>
+         </button>
          
             <ul class="site-contacts">   
                <li class="nav-contacts">
                   <a class="nav-link contact" href="mailto:info@devstudio.com">
-                     <svg class="icon-mail">
-                        <use href="./images/sprite.svg#icon-email"></use>
-                     </svg>
-                     info@devstudio.com
-                  </a>
+                  <svg class="icon-mail" aria-label="иконка конверт">
+                     <use href="./images/sprite.svg#icon-email"></use>
+                  </svg>
+                  info@devstudio.com
+               </a>
                </li>
                <li class="nav-contacts">
                   <a class="nav-link contact" href="tel:+380961111111">
-                     <svg class="icon-phone">
+                     <svg class="icon-phone" aria-label="иконка телефона">
                         <use href="./images/sprite.svg#icon-phone"></use>
                      </svg>
                      +38 096 111 11 11
                   </a>
                </li>
             </ul>
-      </div>
+   </div>
+   <div class="mobile-menu" data-menu>
+      <button class="mobile-menu-close" data-menu-close type="button">
+         <svg class="mobile-menu-close-icon">
+            <use href="./images/sprite.svg#mobile-menu-close"></use>
+         </svg>
+      </button>
+      <nav class="mobile-nav">
+         <ul class="mobile-menu-nav">
+            <li class="mobile-menu-nav-item">
+               <a class="mobile-menu-nav-link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+               <a class="mobile-menu-nav-link current" href="#">Портфолио</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+               <a class="mobile-menu-nav-link" href="#">Контакты</a>
+            </li>
+         </ul>
+
+         <ul class="mobile-menu-contacts">
+            <li class="mobile-menu-nav-contacts-item">
+            <a class="mobile-phone-link" href="tel:+380961111111">
+               +38 096 111 11 11
+            </a>
+            </li>
+            <li class="mobile-menu-nav-contacts-item">
+               <a class="mobile-mail-link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+               </a>
+            </li>
+         </ul>
+
+         <ul class="mobile-menu-social-links">
+            <li class="mobile-menu-social-item">
+               <a class="mobile-menu-social-link" href="#">Instagram</a>
+            </li>
+
+            <li class="mobile-menu-social-item">
+               <a class="mobile-menu-social-link" href="#">Twitter</a>
+            </li>
+
+            <li class="mobile-menu-social-item">
+               <a class="mobile-menu-social-link" href="#">Facebook</a>
+            </li>
+
+            <li class="mobile-menu-social-item">
+               <a class="mobile-menu-social-link" href="#">LinkedIn</a>
+            </li>
+         </ul>
+      </nav>
    </div>
 </header>
 
@@ -492,5 +546,7 @@
       </div>
    </div>
 </footer>
+
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
