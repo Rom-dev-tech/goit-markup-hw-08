@@ -1,3 +1,7 @@
+.icon-container-regular-clients {
+  display: flex;
+  height: 90px;
+}
 .regular-clients-list {
   @extend %list;
   display: flex;
@@ -6,9 +10,7 @@
   margin: -15px;
 }
 .regular-clients-item {
-  display: flex;
   width: calc((100% - 4 * 15px) / 2);
-  height: 90px;
   margin: 15px;
 
   @media screen and (min-width: 768px) {
@@ -21,6 +23,9 @@
 }
 .regular-clients-link {
   @extend %link;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -35,8 +40,4 @@
     border: 1px solid var(--accent-text-color);
     outline: none;
   }
-}
-.company-icon {
-  height: 100%;
-  vertical-align: middle;
 }

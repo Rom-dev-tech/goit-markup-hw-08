@@ -732,6 +732,11 @@ a {
   }
 }
 
+.icon-container-regular-clients {
+  display: flex;
+  height: 90px;
+}
+
 .regular-clients-list {
   display: flex;
   flex-wrap: wrap;
@@ -740,9 +745,7 @@ a {
 }
 
 .regular-clients-item {
-  display: flex;
   width: calc((100% - 4 * 15px) / 2);
-  height: 90px;
   margin: 15px;
 }
 
@@ -759,6 +762,9 @@ a {
 }
 
 .regular-clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
@@ -770,11 +776,6 @@ a {
   fill: var(--accent-text-color);
   border: 1px solid var(--accent-text-color);
   outline: none;
-}
-
-.company-icon {
-  height: 100%;
-  vertical-align: middle;
 }
 
 .footer {
