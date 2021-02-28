@@ -1,3 +1,15 @@
+.mobile-menu-nav,
+.mobile-menu-contacts,
+.mobile-menu-social-links {
+  @extend %list;
+}
+.mobile-menu-nav-link,
+.mobile-menu-social-link,
+.mobile-mail-link,
+.mobile-phone-link {
+  @extend %link;
+}
+
 @media screen and (max-width: 767px) {
   .burger-icon,
   .mobile-menu-close-icon {
@@ -74,7 +86,7 @@
   height: 100vh;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-150%);
   background: var(--white-text-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);

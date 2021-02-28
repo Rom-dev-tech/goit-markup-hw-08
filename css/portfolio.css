@@ -24,11 +24,16 @@
   overflow: hidden;
 }
 
-.social-list, .site-contacts, .site-nav, .portfolio-list, .cards-list, .footer-list {
+.social-list, .mobile-menu-nav,
+.mobile-menu-contacts,
+.mobile-menu-social-links, .site-contacts, .site-nav, .portfolio-list, .cards-list, .footer-list {
   list-style: none;
 }
 
-.social-link, .logo, .nav-link, .cards-link, .footer-link {
+.social-link, .logo, .mobile-menu-nav-link,
+.mobile-menu-social-link,
+.mobile-mail-link,
+.mobile-phone-link, .nav-link, .cards-link, .footer-link {
   text-decoration: none;
 }
 
@@ -289,7 +294,7 @@ a {
   height: 100vh;
   top: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-150%);
   background: var(--white-text-color);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   padding: 48px 40px;
