@@ -98,7 +98,7 @@
   align-items: center;
 
   color: var(--primary-text-color);
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.666;
   margin-bottom: 30px;
 
@@ -146,9 +146,7 @@
 }
 .contract-link {
   color: var(--accent-text-color);
-  @media screen and (min-width: 1200px) {
-    margin-left: 6px;
-  }
+  margin-left: 6px;
 }
 .checkbox-input {
   position: absolute !important;
