@@ -267,7 +267,7 @@ a {
     align-items: center;
   }
   .mobile-menu-social-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 12px;
   }
   .mobile-menu-social-link {
     font-weight: 500;
