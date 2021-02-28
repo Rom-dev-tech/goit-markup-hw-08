@@ -45,6 +45,7 @@
 
   .mobile-menu-social-links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
   .mobile-menu-social-item {
@@ -105,9 +106,11 @@
 
 .burger-btn,
 .mobile-menu-close {
-  background-color: transparent;
-  border: none;
-  padding: 0;
+  @media screen and (max-width: 767px) {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
 
   @media screen and (min-width: 768px) {
     display: none;

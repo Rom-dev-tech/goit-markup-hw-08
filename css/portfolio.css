@@ -257,6 +257,7 @@ a {
   }
   .mobile-menu-social-links {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
   .mobile-menu-social-item:not(:last-child) {
@@ -312,11 +313,13 @@ a {
   }
 }
 
-.burger-btn,
-.mobile-menu-close {
-  background-color: transparent;
-  border: none;
-  padding: 0;
+@media screen and (max-width: 767px) {
+  .burger-btn,
+  .mobile-menu-close {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
