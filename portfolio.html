@@ -114,29 +114,34 @@
          <!-- button -->
                <ul class="portfolio-list">
                   <li class="portfolio-item">
-                     <button class="portfolio-btn" type="button">Все</button>
+                     <input id="all" class="radiobutton" type="radio" name="cards" value="all" checked onclick="showHideCards(this)"/>
+                     <label class="portfolio-btn" for="all">Все</label>
                   </li>
 
                   <li class="portfolio-item">
-                     <button class="portfolio-btn" type="button">Веб-сайты</button>
+                     <input id="web" class="radiobutton" type="radio" name="cards" value="web" onclick="showHideCards(this)"/>
+                     <label class="portfolio-btn" for="web">Веб-сайты</label>
                   </li>
 
                   <li class="portfolio-item">
-                     <button class="portfolio-btn" type="button">Приложения</button>
+                     <input id="app" class="radiobutton" type="radio" name="cards" value="app" onclick="showHideCards(this)"/>
+                     <label class="portfolio-btn" for="app">Приложения</label>
                   </li>
 
                   <li class="portfolio-item">
-                     <button class="portfolio-btn" type="button">Дизайн</button>
+                     <input id="design" class="radiobutton" type="radio" name="cards" value="design" onclick="showHideCards(this)"/>
+                     <label class="portfolio-btn" for="design">Дизайн</label>
                   </li>
                   
                   <li class="portfolio-item">
-                     <button class="portfolio-btn" type="button">Маркетинг</button>
+                     <input id="marketing" class="radiobutton" type="radio" name="cards" value="marketing" onclick="showHideCards(this)"/>
+                     <label class="portfolio-btn" for="marketing">Маркетинг</label>
                   </li>
                </ul>
          <!-- cards -->
                <ul class="cards-list">
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="web-card">
                         <a class="cards-link" href="#">
                               <div class="cards-thumb">
                                  <picture>
@@ -174,7 +179,7 @@
                         </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="design-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -212,7 +217,7 @@
                      </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="app-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -250,7 +255,7 @@
                      </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="marketing-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -288,7 +293,7 @@
                      </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="app-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -326,7 +331,7 @@
                      </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="web-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -364,7 +369,7 @@
                      </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="design-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -402,7 +407,7 @@
                      </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="marketing-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -440,7 +445,7 @@
                      </a>
                   </li>
 
-                  <li class="cards-item">
+                  <li class="cards-item" name="app-card">
                      <a class="cards-link" href="#">
                         <div class="cards-thumb">
                            <picture>
@@ -548,5 +553,6 @@
 </footer>
 
 <script src="./js/mobile-menu.js"></script>
+<script src="./js/cards-filters.js"></script>
 </body>
 </html>
