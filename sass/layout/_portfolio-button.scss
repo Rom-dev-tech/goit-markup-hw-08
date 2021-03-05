@@ -29,8 +29,8 @@
 }
 
 .radiobutton {
-  list-style-type: none;
-  appearance: none;
+  // list-style-type: none;
+  // appearance: none;
 
   &:checked + .portfolio-btn {
     color: var(--white-text-color);

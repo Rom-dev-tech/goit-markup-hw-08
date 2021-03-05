@@ -620,13 +620,6 @@ a {
   outline: none;
 }
 
-.radiobutton {
-  list-style-type: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
 .radiobutton:checked + .portfolio-btn {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
